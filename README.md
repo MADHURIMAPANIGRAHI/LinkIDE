@@ -1,8 +1,8 @@
-# 🚀 DevSync IDE
+# 🚀 LinkIDE
 
 > Real-Time Collaborative Development Workspace with AI-Assisted Coding
 
-DevSync IDE is a modern collaborative coding platform engineered for high-performance developer workflows.  
+LinkIDE is a modern collaborative coding platform engineered for high-performance developer workflows.  
 It combines real-time multi-user synchronization, inline AI-assisted coding, isolated execution environments, and secure authentication into a scalable microservice-based architecture.
 
 Built using Next.js, Socket.io, MongoDB Atlas, and Gemini AI.
@@ -58,7 +58,7 @@ Built using Next.js, Socket.io, MongoDB Atlas, and Gemini AI.
 
 # 🏗️ Architecture Overview
 
-DevSync follows a decoupled architecture:
+LinkIDE follows a decoupled architecture:
 
 ```text
 Frontend (Next.js)
@@ -149,8 +149,11 @@ MONGODB_URI=mongodb+srv://<username>:<password>@cluster.mongodb.net/devsync_db
 GOOGLE_CLIENT_ID=your_google_client_id
 GOOGLE_CLIENT_SECRET=your_google_client_secret
 
-EMAIL_SERVER_PASSWORD=your_resend_api_key
-EMAIL_FROM=onboarding@resend.dev
+EMAIL_SERVER_HOST=smtp.gmail.com
+EMAIL_SERVER_PORT=465
+EMAIL_SERVER_USER=user_email
+EMAIL_SERVER_PASSWORD=password_from_app_password
+EMAIL_FROM="LinkIDE <no-reply@domian.in>"
 
 GEMINI_API_KEY=your_gemini_api_key
 ```
@@ -174,7 +177,7 @@ FRONTEND_URL=http://localhost:3000
 ## 1. Clone Repository
 
 ```bash
-git clone https://github.com/your-username/devsync-ide.git
+git clone https://github.com/MADHURIMAPANIGRAHI/LinkIDE.git
 ```
 
 ---
@@ -182,7 +185,7 @@ git clone https://github.com/your-username/devsync-ide.git
 ## 2. Install Frontend Dependencies
 
 ```bash
-cd devsync-frontend
+cd linkide-frontend
 npm install
 ```
 
@@ -191,7 +194,7 @@ npm install
 ## 3. Install Backend Dependencies
 
 ```bash
-cd ../devsync-backend
+cd ../linkide-backend
 npm install
 ```
 
@@ -202,7 +205,7 @@ npm install
 ## Start Frontend
 
 ```bash
-cd devsync-frontend
+cd linkide-frontend
 npm run dev
 ```
 
@@ -217,7 +220,7 @@ http://localhost:3000
 ## Start Socket Backend
 
 ```bash
-cd devsync-backend
+cd linkide-backend
 node server.js
 ```
 
@@ -333,7 +336,7 @@ fork → create branch → commit → open pull request
 
 # 👨‍💻 Author
 
-Developed by Madhurima Panigrahi
+Developed by Madhurima Panigrahi with ❤️
 
 ### Areas of Interest
 
